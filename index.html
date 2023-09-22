@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <style>
+      * {
+        border: 1px solid red;
+        padding: 1em;
+      }
+      .css-ticker {
+        min-height: 200px;
+      }
+      .css-animate {
+        position: absolute;
+        will-change: transform;
+
+        animation: move 7.0s linear infinite;
+      }
+      .template {display: flex;}
+
+      .css-ticker {
+        position: relative;
+        min-height: 200px;
+      }
+
+      @keyframes move {
+        from {
+            transform: translate3d(1600px,0,0);
+          }
+        to {
+            transform: translate3d(-1600px,0,0);
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+<div class="css-ticker">
+  <div class="css-animate">
+    <div class="template">
+        <span>Hello</span>
+        <span>world</span>
+        <span>Hello</span>
+        <img src="https://picsum.photos/50/50" alt="">
+        <span>world</span>
+        <span>Hello</span>
+        <span>world</span>
+        <span>Hello</span>
+        <span>world</span>
+        <span>Hello</span>
+        <img src="https://picsum.photos/50/50" alt="">
+        <span>world</span>
+        <span>Hello</span>
+        <span>world</span>
+        <span>Hello</span>
+        <span>world</span>
+        <img src="https://picsum.photos/50/50" alt="">
+        <span>Hello</span>
+        <span>world</span>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
